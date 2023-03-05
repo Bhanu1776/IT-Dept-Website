@@ -1,7 +1,7 @@
 // cz.config.js
 /** @type {import('cz-git').CommitizenGitOptions} */
 module.exports = {
-    alias: { fd: 'docs: fix typos' },
+    alias: { "fd": 'docs: fix typos', "ur": "docs: update README" },
     messages: {
         type: 'Select the type of change that you\'re committing:',
         scope: 'Denote the SCOPE of this change (optional):',
@@ -10,7 +10,7 @@ module.exports = {
         body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
         breaking: 'List any BREAKING CHANGES (optional). Use "|" to break new line:\n',
         footerPrefixesSelect: 'Select the ISSUES type of changeList by this change (optional):',
-        customFooterPrefix: 'Input ISSUES prefix:',
+        customFooterPrefix: 'Input ISSUES prefix: ',
         footer: 'List any ISSUES by this change. E.g.: #31, #34:\n',
         generatingByAI: 'Generating your AI commit subject...',
         generatedSelectByAI: 'Select suitable subject by AI generated:',
