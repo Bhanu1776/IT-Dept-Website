@@ -23,6 +23,7 @@
     "tailwindcss-debug-screens": "^2.2.1"
   },
   "devDependencies": {
+    "@types/react": "^18.0.28",
     "autoprefixer": "^10.4.13",
     "cz-git": "^1.5.3",
     "postcss": "^8.4.21",
