@@ -22,8 +22,8 @@ const props = {
 };
 const upload = () => (
     <>
-        <div className='grid h-full place-content-center'>
-            <Dragger {...props} listType='picture' progress={{
+        <div className='grid w-screen h-screen bg-blue-100 place-content-center' >
+            <Dragger {...props} listType='picture' accept='.pdf' style={{ padding: '30px 300px', maxHeight: '100px', maxWidth: '300px' }} progress={{
                 strokeColor: {
                     "0%": "#f0f",
                     "100%": "#ff0"
