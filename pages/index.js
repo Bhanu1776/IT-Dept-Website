@@ -1,9 +1,10 @@
 import React from "react";
-import Homepage from "./homepage";
+import { Button } from "antd";
 const Home = () => {
   return (
     <>
-      <Homepage />
+      <div className="text-red-800">Home</div>
+      <Button type="primary">Primary Button</Button>
     </>
   );
 };
