@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload, Button } from 'antd';
 import { message, Upload, Button } from 'antd';
