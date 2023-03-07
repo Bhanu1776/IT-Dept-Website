@@ -6,17 +6,15 @@ module.exports = {
   extends: [
     'airbnb',
     'airbnb/hooks',
+    'plugin:prettier/recommended',
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './jsconfig.json',
   },
-  plugins: [
-
-  ],
+  plugins: ['prettier'],
   rules: {
     'react/prop-types': 0,
     'react/jsx-filename-extension': 0,
