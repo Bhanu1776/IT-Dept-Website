@@ -1,9 +1,9 @@
+/* eslint-disable */
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload, Button } from 'antd';
-import { storage } from "../lib/firebase";
-import { uploadBytes, ref } from "firebase/storage";
+import { uploadBytes, ref } from 'firebase/storage';
 import { useState } from 'react';
-
+import { storage } from '../lib/firebase';
 
 const upload = () => {
   const [filesup, setFiles] = useState([]);
@@ -29,35 +29,35 @@ const upload = () => {
     },
   };
 
-
   const handleUpload = async () => {
     try {
       for (let i = 0; i < filesup.length; i++) {
         const file = filesup[i];
         const storageRef = ref(storage, `test/${file.name}`);
         const uploadFile = await uploadBytes(storageRef, file);
-        console.log("File uploaded: " + uploadFile.ref)
-
+        console.log(`File uploaded: ${uploadFile.ref}`);
       }
-
-
     } catch (e) {
-      console.log(e)
-      alert("File not Uploaded")
+      console.log(e);
+      alert('File not Uploaded');
     }
-  }
-
+  };
 
   return (
     <>
-      <div className='grid h-full place-content-center'>
-        <Dragger {...props} listType='picture' progress={{
-          strokeColor: {
-            "0%": "#f0f",
-            "100%": "#ff0"
-          }, strokeWidth: 4,
-          style: { top: 12 }
-        }}>
+      <div className="grid h-full place-content-center">
+        <Dragger
+          {...props}
+          listType="picture"
+          progress={{
+            strokeColor: {
+              '0%': '#f0f',
+              '100%': '#ff0',
+            },
+            strokeWidth: 4,
+            style: { top: 12 },
+          }}
+        >
           <p className="ant-upload-drag-icon">
             <InboxOutlined />
           </p>
@@ -67,6 +67,6 @@ const upload = () => {
       <Button onClick={handleUpload}>Upload</Button>
     </>
   );
-}
+};
 
-export default upload
+export default upload;

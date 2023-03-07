@@ -1,40 +1,37 @@
-import { storage } from "../lib/firebase";
-import { ref, listAll, getDownloadURL } from "firebase/storage";
+/* eslint-disable */
+import { ref, listAll, getDownloadURL } from 'firebase/storage';
 import { Button } from 'antd';
-import { useEffect, useState } from "react";
-
+import { useEffect, useState } from 'react';
+import { storage } from '../lib/firebase';
 
 const view = () => {
-  const [files, setfiles] = useState([])
+  const [files, setfiles] = useState([]);
 
   useEffect(() => {
-  
     const fetchURLS = async () => {
-      const listRef = ref(storage, "test/");
+      const listRef = ref(storage, 'test/');
       const list = await listAll(listRef);
       const urls = await Promise.all(
         list.items.map(async (item) => {
           const url = await getDownloadURL(item);
-          console.log(url)
+          console.log(url);
           return { url, name: item.name };
         })
       );
       setfiles(urls);
     };
     fetchURLS();
-  }, [])
-  
+  }, []);
+
   return (
     <div>
-      {files.map((file)=>(
-        <>
+      {files.map((file) => (
         <div key={file.name}>
           <a href={file.url}>{file.name}</a>
         </div>
-        </>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default view
+export default view;
