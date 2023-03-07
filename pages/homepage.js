@@ -9,6 +9,8 @@ const Homepage = () => {
     <>
       <Navbar />
       <Carousel />
+      <LatestEvents />
+      <Faculty />
       <Acedemics />
       <Objectives />
       <Footer />
