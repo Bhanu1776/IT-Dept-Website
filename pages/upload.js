@@ -3,7 +3,6 @@ import { message, Upload, Button } from 'antd';
 import { message, Upload, Button } from 'antd';
 import { uploadBytes, ref } from 'firebase/storage';
 import { useState } from 'react';
-import { storage } from '../lib/firebase';
 
 const FileUpload = () => {
   const [filesup, setFiles] = useState([]);
@@ -83,4 +82,4 @@ const FileUpload = () => {
   );
 };
 
-export default FileUpload;
+export default upload;
