@@ -15,7 +15,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './jsconfig.json',
+    project: './next.config.js',
   },
   plugins: ['prettier'],
   rules: {
