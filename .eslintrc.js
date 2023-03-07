@@ -6,10 +6,11 @@ module.exports = {
   extends: [
     'airbnb',
     'airbnb/hooks',
-    'plugin:prettier/recommended',
+    'next/core-web-vitals',
     'plugin:@next/next/recommended',
     'eslint:recommended',
     'next',
+    'plugin:prettier/recommended',
   ],
   overrides: [],
   parserOptions: {
