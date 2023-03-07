@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = { extends: 'next/core-web-vitals' };
 
 module.exports = nextConfig;
