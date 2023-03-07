@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload, Button } from 'antd';
 import { uploadBytes, ref } from 'firebase/storage';

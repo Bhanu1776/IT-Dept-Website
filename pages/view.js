@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
 import { Button } from 'antd';
 import { useEffect, useState } from 'react';
