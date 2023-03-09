@@ -1,6 +1,5 @@
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload, Button } from 'antd';
-import { message, Upload, Button } from 'antd';
 import { uploadBytes, ref } from 'firebase/storage';
 import { useState } from 'react';
 
@@ -82,4 +81,4 @@ const FileUpload = () => {
   );
 };
 
-export default upload;
+export default FileUpload;
