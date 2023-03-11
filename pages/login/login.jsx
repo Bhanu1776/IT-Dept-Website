@@ -6,11 +6,11 @@ import { MdEmail, MdLock, MdVisibilityOff, MdVisibility } from 'react-icons/md';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { app } from '../../lib/firebase';
-// import { auth } from '../../lib/firebase';
+// import { app } from '../../lib/firebase';
+import { auth } from '../../lib/firebase';
 
 const Login = () => {
-  const auth = getAuth(app);
+  // const auth = getAuth(app);
   const router = useRouter();
 
   const [email, setEmail] = useState('');
