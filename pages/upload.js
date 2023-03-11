@@ -1,10 +1,9 @@
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload, Button } from 'antd';
-import { uploadBytes, ref } from 'firebase/storage';
+import { uploadBytes, ref, storage } from 'firebase/storage';
 import { useState } from 'react';
-import { storage } from '../lib/firebase';
 
-const upload = () => {
+const FileUpload = () => {
   const [filesup, setFiles] = useState([]);
   const { Dragger } = Upload;
   const props = {
@@ -30,6 +29,13 @@ const upload = () => {
 
   const handleUpload = async () => {
     try {
+      // const name = filesup.name
+      // Array.from(filesup).forEach(async (file) => {
+      //     const storageRef = ref(storage, `test/${name}`);
+      //     const uploadFile = await uploadBytes(storageRef, file);
+      //     console.log("File uploaded: " + uploadFile.ref)
+
+      // });
       for (let i = 0; i < filesup.length; i++) {
         const file = filesup[i];
         const storageRef = ref(storage, `test/${file.name}`);
@@ -40,6 +46,11 @@ const upload = () => {
       console.log(e);
       alert('File not Uploaded');
     }
+  };
+
+  const handleRemoveFile = () => {
+    setFiles(undefined);
+    alert('Files removed');
   };
 
   return (
@@ -64,8 +75,9 @@ const upload = () => {
         </Dragger>
       </div>
       <Button onClick={handleUpload}>Upload</Button>
+      <Button onClick={handleRemoveFile}>Remove</Button>
     </>
   );
 };
 
-export default upload;
+export default FileUpload;

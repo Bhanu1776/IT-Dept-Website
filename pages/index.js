@@ -1,4 +1,3 @@
-import React from 'react';
 import Homepage from './homepage';
 
 const Home = () => <Homepage />;
