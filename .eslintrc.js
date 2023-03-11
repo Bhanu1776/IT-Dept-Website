@@ -24,7 +24,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-props-no-spreading': 0,
     'no-console': 0,
-    // 'no-undef': 0,
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'no-nested-ternary': 0,
     'prefer-regex-literals': 'off',
     'no-debugger': 0,
