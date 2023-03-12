@@ -49,11 +49,11 @@ const HeroCarousel = () => {
 
   return (
     <div className="flex flex-col items-center justify-center ">
-      <div className="h-[34rem] w-full relative group">
+      <div className="h-[100vh] w-[100%] relative group">
         <div className="relative w-full h-full duration-500 bg-center bg-cover ">
           <div className="relative w-full h-full ">
             <Image
-              className="object-cover object-center bg-center bg-cover h-[34rem] "
+              className="object-cover object-center bg-center bg-cover h-[100vh] "
               src={`${slides[currentIndex].image}`}
               alt="/"
               layout="fill"
@@ -68,7 +68,7 @@ const HeroCarousel = () => {
           onClick={prevSlide}
           id="data-carousel-prev"
           type="button"
-          className="absolute left-0 z-0 flex items-center justify-center h-full px-4 cursor-pointer top-10 group focus:outline-none"
+          className="absolute top-0 left-0 z-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         >
           <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg
@@ -94,7 +94,7 @@ const HeroCarousel = () => {
           onClick={nextSlide}
           id="data-carousel-next"
           type="button"
-          className="absolute right-0 z-0 flex items-center justify-center h-full px-4 cursor-pointer top-10 group focus:outline-none"
+          className="absolute top-0 right-0 z-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         >
           <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg
