@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, TypographyProps, Button, Badge } from 'antd';
-
+import { Card, Button, Badge } from 'antd';
 import Image from 'next/image';
 import classphoto from '../public/Assets/images/TE_IT.jpg';
 

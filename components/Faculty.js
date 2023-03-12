@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card, Avatar, Typography, Button } from 'antd';
 
-import Image from 'next/image';
-
 const Faculty = () => (
   <div className="2xl:mx-[150px] lg:mx-[150px] xl:mx-[150px]">
     <h1 className="text-4xl font-fira text-bold">Faculty</h1>

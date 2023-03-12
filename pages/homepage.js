@@ -1,24 +1,20 @@
 import React from 'react';
-import LatestEvents from '../Components/LatestEvents';
-import Faculty from '../Components/Faculty';
-import Navbar from '../Components/Navbar';
-import Carousel from '../Components/HeroCarousel';
-import Footer from '../Components/Footer';
-import Objectives from '../Components/Objectives';
-import VisionMission from '../Components/VisionMission';
-import Acedemics from '../Components/Acedemics';
+import Navbar from '../components/Navbar';
+import Carousel from '../components/HeroCarousel';
+import Footer from '../components/Footer';
+import Objectives from '../components/Objectives';
+import Acedemics from '../components/Acedemics';
+import Faculty from '../components/Faculty';
+import LatestEvents from '../components/LatestEvents';
 
-const Homepage = () => (
+const homepage = () => (
   <>
     <Navbar />
     <Carousel />
-    {/* <LatestEvents /> */}
-    {/* <Faculty /> */}
+    <LatestEvents />
+    <Faculty />
     <Acedemics />
-    {/* <Objectives /> */}
-    <VisionMission />
+    <Objectives />
     <Footer />
   </>
 );
-
-export default Homepage;
