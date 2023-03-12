@@ -1,23 +1,22 @@
-import Navbar from "../Components/Navbar";
-import Carousel from "../Components/HeroCarousel";
-import React from "react";
-import Footer from "../Components/Footer";
-import Objectives from "../Components/Objectives";
-import Acedemics from "../Components/Acedemics";
-import Faculty from "../Components/Faculty";
-import LatestEvents from "../Components/LatestEvents";
-const homepage = () => {
-  return (
-    <>
-      <Navbar />
-      <Carousel />
-      <LatestEvents />
-      <Faculty />
-      <Acedemics />
-      <Objectives />
-      <Footer />
-    </>
-  );
-};
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Carousel from '../components/HeroCarousel';
+import Footer from '../components/Footer';
+import Objectives from '../components/Objectives';
+import Academics from '../components/Academics';
+import Faculty from '../components/Faculty';
+import LatestEvents from '../components/LatestEvents';
 
-export default homepage;
+const homepage = () => (
+  <>
+    <Navbar />
+    <Carousel />
+    <LatestEvents />
+    <Faculty />
+    <Academics />
+    <Objectives />
+    <Footer />
+  </>
+);
+
+export default homepage;
