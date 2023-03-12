@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/HeroCarousel';
 import Footer from '../components/Footer';
 import Objectives from '../components/Objectives';
-import Acedemics from '../components/Acedemics';
+import Academics from '../components/Academics';
 import Faculty from '../components/Faculty';
 import LatestEvents from '../components/LatestEvents';
 
@@ -13,7 +13,7 @@ const homepage = () => (
     <Carousel />
     <LatestEvents />
     <Faculty />
-    <Acedemics />
+    <Academics />
     <Objectives />
     <Footer />
   </>
