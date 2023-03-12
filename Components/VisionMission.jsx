@@ -1,6 +1,6 @@
 const VisionMission = () => (
   <main className="bg-[#d6cfff52] ">
-    <div className="grid lg:grid-cols-4 xxsm:grid-cols-1 grid-rows-2 gap-4 m-8 ">
+    <div className="grid grid-rows-2 gap-4 m-8 lg:grid-cols-4 xxsm:grid-cols-1 ">
       <div className="col-span-3 text-center bg-[#f2e8f39e] rounded-xl shadow-md p-6">
         <h1 className="text-2xl font-bold ">Vision</h1>
         <p>
