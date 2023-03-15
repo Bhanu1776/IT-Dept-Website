@@ -21,7 +21,7 @@ const Faculty = () => (
             position: 'relative',
             bottom: 10,
           }}
-          src="/Assets/images/facultyimg1.png"
+          src="/assets/images/facultyimg1.png"
         />
         <Typography style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}>
           MEENA UGALE
@@ -59,7 +59,7 @@ const Faculty = () => (
             position: 'relative',
             bottom: 10,
           }}
-          src="/Assets/images/facultyimg2.png"
+          src="/assets/images/facultyimg2.png"
         />
         <Typography style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}>
           FR.DR. JOHN ROSE SJ
@@ -97,7 +97,7 @@ const Faculty = () => (
             position: 'relative',
             bottom: 10,
           }}
-          src="/Assets/images/facultyimg3.png"
+          src="/assets/images/facultyimg3.png"
         />
         <Typography style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}>
           FR.DR. THOMAS SCHWARZ SJ
@@ -135,7 +135,7 @@ const Faculty = () => (
             position: 'relative',
             bottom: 10,
           }}
-          src="/Assets/images/facultyimg4.png"
+          src="/assets/images/facultyimg4.png"
         />
         <Typography style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}>
           CHHAYA DIPAK DHAVALE
@@ -174,7 +174,7 @@ const Faculty = () => (
             position: 'relative',
             bottom: 10,
           }}
-          src="/Assets/images/facultyimg5.png"
+          src="/assets/images/facultyimg5.png"
         />
         <Typography style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}>
           JAYCHAND UPADHYAY
@@ -211,7 +211,7 @@ const Faculty = () => (
             position: 'relative',
             bottom: 10,
           }}
-          src="/Assets/images/facultyimg6.png"
+          src="/assets/images/facultyimg6.png"
         />
         <Typography style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}>
           MARTINA D'SOUZA

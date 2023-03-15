@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button, Badge } from 'antd';
 import Image from 'next/image';
-import classphoto from '../public/Assets/images/TE_IT.jpg';
+import classphoto from '../public/assets/images/TE_IT.jpg';
 
 const LatestEvents = () => (
   <div className="2xl:mx-[150px] lg:mx-[150px]">
