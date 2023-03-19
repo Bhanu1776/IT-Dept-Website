@@ -5,13 +5,11 @@ import Footer from '../components/Footer';
 import Objectives from '../components/Objectives';
 import Academics from '../components/Academics';
 import Faculty from '../components/Faculty';
-import LatestEvents from '../components/LatestEvents';
 
 const homepage = () => (
   <>
     <Navbar />
     <Carousel />
-    <LatestEvents />
     <Faculty />
     <Academics />
     <Objectives />
