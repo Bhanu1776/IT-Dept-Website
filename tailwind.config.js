@@ -1,4 +1,6 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const colors = require('tailwindcss/colors');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -16,7 +18,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2.4rem',
+      // margin: '10px',
     },
     debugScreens: {
       position: ['bottom', 'left'],
