@@ -116,7 +116,6 @@ const HeroCarousel = () => {
         </button>
         <div className="flex justify-center py-2 top-4">
           {slides.map((slide, slideIndex) => (
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}

@@ -149,13 +149,9 @@ module.exports = {
     },
   },
   plugins: [
-    // eslint-disable-next-line global-require
     require('tailwindcss-debug-screens'),
-    // eslint-disable-next-line global-require
     require('tailwindcss-brand-colors'),
-    // eslint-disable-next-line global-require
     require('@tailwindcss/typography'),
-    // eslint-disable-next-line global-require
     require('@tailwindcss/forms'),
   ],
 };
