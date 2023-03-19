@@ -2,7 +2,7 @@ import { message, Upload, Button, Row, Col, Card } from 'antd';
 import { uploadBytes, ref, storage } from 'firebase/storage';
 import { useState } from 'react';
 import Image from 'next/image';
-import Folder from '../public/Assets/images/Folder.png';
+import Folder from '../public/assets/images/Folder.png';
 
 const FileUpload = () => {
   const [filesup, setFiles] = useState([]);

@@ -13,7 +13,7 @@ const homepage = () => (
     <Faculty />
     <Academics />
     <Objectives />
-    <Footer /> */}
+    <Footer />
   </>
 );
 export default homepage;
