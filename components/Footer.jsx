@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <>
-    <div className="grid md:grid-cols-3 grid-rows-1 border-red-200 border-2 gap-4">
+    <div className="grid grid-rows-1 gap-4 border-2 border-red-200 md:grid-cols-3">
       <div className="border-2 border-green-500">
         <h1>Information Technology</h1>
         <p>Logo</p>
@@ -21,7 +21,7 @@ const Footer = () => (
         <h1>Extra Stuff</h1>
       </div>
     </div>
-    <div className="flex text-center text-xs bg-slate-100 rounded-t-full px-4 pt-1 pb-1 tablet:text-base tablet:justify-start md:px-10">
+    <div className="flex px-4 pt-1 pb-1 text-xs text-center rounded-t-full bg-slate-100 tablet:text-base tablet:justify-start md:px-10">
       ©{new Date().getFullYear()} Information Technology Department, Xavier's
       Institute of Engineering
     </div>

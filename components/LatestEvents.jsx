@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button, Badge } from 'antd';
 import Image from 'next/image';
-import classphoto from '../public/assets/images/TE_IT.jpg';
+// import classphoto from '../public/assets/images/TE_IT.jpg';
 
 const LatestEvents = () => (
   <div className="2xl:mx-[150px] lg:mx-[150px]">
@@ -14,7 +14,7 @@ const LatestEvents = () => (
           style={{
             boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
           }}
-          cover={<Image src={classphoto} width={200} height={100} />}
+          // cover={<Image src={classphoto} width={200} height={100} />}
         >
           <h1 className="text-xl">TE-IT Class photo</h1>
           <Button
@@ -33,7 +33,7 @@ const LatestEvents = () => (
         style={{
           boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
         }}
-        cover={<Image src={classphoto} width={200} height={100} />}
+        // cover={<Image src={classphoto} width={200} height={100} />}
       >
         <h1 className="text-xl">TE-IT Class photo</h1>
         <Button className="text-white bg-blue-500 mt-14" block="">
@@ -46,7 +46,7 @@ const LatestEvents = () => (
         style={{
           boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
         }}
-        cover={<Image src={classphoto} width={200} height={100} />}
+        // cover={<Image src={classphoto} width={200} height={100} />}
       >
         <h1 className="text-xl">TE-IT Class photo</h1>
         <Button className="text-white bg-blue-500 mt-14" block="">
@@ -59,7 +59,7 @@ const LatestEvents = () => (
         style={{
           boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
         }}
-        cover={<Image src={classphoto} width={200} height={100} />}
+        // cover={<Image src={classphoto} width={200} height={100} />}
       >
         <h1 className="text-xl">TE-IT Class photo</h1>
         <Button className="text-white bg-blue-500 mt-14" block="">

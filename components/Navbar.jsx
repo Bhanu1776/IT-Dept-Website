@@ -1,90 +1,88 @@
-import React from 'react';
+// import { Button } from 'antd';
+import React, { useState } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
-const Navbar = () => (
-  <nav className="bg-[#202124] px-1  py-2.5 dark:bg-gray-900 sticky w-full z-20 top-0 left-0 border-b  dark:border-gray-600">
-    <div className="container flex flex-wrap items-center justify-between mx-auto ">
-      <a href="#" className="flex items-center">
-        <img
-          src="https://flowbite.com/docs/images/logo.svg"
-          className="h-6 mr-3 sm:h-9"
-          alt="Flowbite Logo"
-        />
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+  return (
+    <nav className="bg-[#202124] px-3.5  py-3.5 shadow sticky top-0 left-0 z-20 w-full flex flex-wrap items-center justify-between">
+      <div className="">
         <span className="self-center text-lg font-normal text-white whitespace-nowrap dark:text-white">
-          INFORMATION TECHNOLOGY
-        </span>
-      </a>
-      <button
-        data-collapse-toggle="navbar-multi-level"
-        type="button"
-        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-multi-level"
-        aria-expanded="false"
-      >
-        <span className="sr-only">Open main menu</span>
-        <svg
-          className="w-6 h-6"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clipRule="evenodd"
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            className="inline-block mr-3 h-9 "
+            alt="Flowbite Logo"
           />
-        </svg>
-      </button>
-      <div
-        className="xxsm:hidden bg-[#202124] w-full md:block md:w-auto"
-        id="navbar-multi-level"
-      >
-        <ul className="flex flex-col p-4 mt-4 border bg-[#202124] border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-[#202124] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
-              aria-current="page"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            >
-              Quiz
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            >
-              Notes
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            >
-              QB
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            >
-              Videos
-            </a>
-          </li>
-        </ul>
+          <span className="hidden md:inline-block">INFORMATION TECHNOLOGY</span>
+        </span>
       </div>
-    </div>
-  </nav>
-);
 
-export default Navbar;
+      <ul
+        className={`mx-auto md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-inherit w-full left-0 md:w-auto top-10 md:py-0 py-4 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ${
+          open ? 'top-[60px] opacity-100' : 'top-[-400px] opacity-0'
+        }`}
+      >
+        <li className="mx-4 my-6 md:my-0">
+          <a
+            href="#"
+            className="block py-2 pl-3 pr-4 text-white duration-500 rounded hover:text-blue-700 md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+            aria-current="page"
+          >
+            Home
+          </a>
+        </li>
+        <li className="mx-4 my-6 md:my-0">
+          <a
+            href="#"
+            className="block py-2 pl-3 pr-4 text-white duration-500 rounded hover:text-blue-700 md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+            aria-current="page"
+          >
+            Quiz
+          </a>
+        </li>
+        <li className="mx-4 my-6 md:my-0">
+          <a
+            href="#"
+            className="block py-2 pl-3 pr-4 text-white duration-500 rounded hover:text-blue-700 md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+            aria-current="page"
+          >
+            Videos
+          </a>
+        </li>
+        <li className="mx-4 my-6 md:my-0">
+          <a
+            href="#"
+            className="block py-2 pl-3 pr-4 text-white duration-500 rounded hover:text-blue-700 md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+            aria-current="page"
+          >
+            Academics
+          </a>
+        </li>
+      </ul>
+      <div className="flex items-center justify-between">
+        <button
+          type="button"
+          className="inline-block px-5 py-2 mr-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg lg:ml-40 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 "
+        >
+          Login
+        </button>
+        <span
+          className="inline-block p-1 text-3xl cursor-pointer md:hidden "
+          onClick={handleClick}
+        >
+          {open ? (
+            <AiOutlineClose className="text-white" name="close" />
+          ) : (
+            <AiOutlineMenu className="text-white" name="menu" />
+          )}
+        </span>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
