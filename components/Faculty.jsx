@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Avatar, Typography, Button } from 'antd';
+import { Card, Avatar } from 'antd';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -24,6 +24,30 @@ const Faculty = () => (
             speed: 1,
             autoStart: true,
           },
+          breakpoints: {
+            1024: {
+              // destroy: true,
+              perPage: 3,
+            },
+            1440: {
+              // destroy: true,
+              perPage: 4,
+            },
+            768: {
+              // destroy: true,
+              perPage: 2,
+            },
+            320: {
+              // destroy: true,
+              perPage: 1,
+            },
+          },
+          mediaQuery: 'min',
+          // breakpoints: {
+          //   640: {
+          //     destroy: true,
+          //   },
+          // },
         }}
         extensions={{ AutoScroll }}
       >
@@ -31,510 +55,492 @@ const Faculty = () => (
           <Card
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg1.png"
+              src="/assets/images/facultyimg1.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              MEENA UGALE
-            </Typography>
-            <Typography>
-              <h5>HOD, Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>meena.u@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+919867646658</h5>
-            </Typography>
-            <Typography>
-              <h5>M.E. (Computer Engineering)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                MEENA UGALE
+              </h1>
+
+              <p>HOD, Assistant Professor </p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                meena.u@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +919867646658 <br /> M.E. (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg2.png"
+              src="/assets/images/facultyimg2.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              FR.DR. JOHN ROSE SJ
-            </Typography>
-            <Typography>
-              <h5>Associate Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>johnrose@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>09833627714</h5>
-            </Typography>
-            <Typography>
-              <h5>MS (Computer Engineering)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                FR.DR. JOHN ROSE SJ
+              </h1>
+
+              <p>Associate Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                johnrose@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +919833627714 <br /> MS (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg3.png"
+              src="/assets/images/facultyimg3.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              FR.DR. THOMAS SCHWARZ SJ
-            </Typography>
-            <Typography>
-              <h5>Adjunct Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>thomas.s@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+1 (408) 724-109</h5>
-            </Typography>
-            <Typography>
-              <h5>M.S. (Computer Science)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                FR.DR. THOMAS SCHWARZ SJ
+              </h1>
+
+              <p>Adjunct Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                thomas.s@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +1 (408) 724-109 <br /> M.E. (Computer Science)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg4.png"
+              src="/assets/images/facultyimg4.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              CHHAYA DIPAK DHAVALE
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>chhaya.n@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>8097181363</h5>
-            </Typography>
-            <Typography>
-              <h5>M.E.(Computer Engg.)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                CHHAYA DIPAK DHAVALE
+              </h1>
+
+              <p>Assistant Professor </p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                chhaya.n@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +918097181363 <br /> M.E. (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg5.png"
+              src="/assets/images/facultyimg5.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              JAYCHAND UPADHYAY
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>jaychand.u@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+91-9029459173</h5>
-            </Typography>
-            <Typography>
-              <h5>M.E.(Computer Engineering)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500">More Detail</Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                JAYCHAND UPADHYAY
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                jaychand.u@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +919029459173 <br /> M.E. (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg6.png"
+              src="/assets/images/facultyimg6.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              MARTINA D'SOUZA
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>martina.r@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+919869279279</h5>
-            </Typography>
-            <Typography>
-              <h5>M.E (Computer Engineering)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                MARTINA D'SOUZA
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                martina.r@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +919869279279 <br /> M.E (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg7.png"
+              src="/assets/images/facultyimg7.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              JYOTSNA BHUSHAN MORE
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>jyotsna.m@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+919920326161</h5>
-            </Typography>
-            <Typography>
-              <h5>M.E. (Computer Engineering)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                JYOTSNA BHUSHAN MORE
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                jyotsna.m@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +919920326161 <br /> M.E (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg8.png"
+              src="/assets/images/facultyimg8.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              SUVARNA ARANJO
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>suvarna.b@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+918424972799</h5>
-            </Typography>
-            <Typography>
-              <h5>M.E (Information Technology)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                SUVARNA ARANJO
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                suvarna.b@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +918424972799 <br /> M.E (Information Technology)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg9.png"
+              src="/assets/images/facultyimg9.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              SULOCHANA DEVI
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>sulochana.d@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+918652231801</h5>
-            </Typography>
-            <Typography>
-              <h5>M.Tech (Software Engineering)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                SULOCHANA DEVI
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                sulochana.d@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +918652231801 <br /> M.E (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg10.png"
+              src="/assets/images/facultyimg10.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              AMIT NAROTE
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>amit.n@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>917977003366</h5>
-            </Typography>
-            <Typography>
-              <h5>M.E. (Computer Science)</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                AMIT NAROTE
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                amit.n@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +917977003366 <br /> M.E. (Computer Science)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg11.png"
+              src="/assets/images/facultyimg11.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              JAYA JESWANI
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>jaya.j@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>9082185124</h5>
-            </Typography>
-            <Typography>
-              <h5>ME in Computer Engineering</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                JAYA JESWANI
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                jaya.j@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +919082185124 <br /> M.E. (Computer Engineering)
+              </p>
+            </div>
           </Card>
         </SplideSlide>
         <SplideSlide>
           <Card
-            className=" lg:invisible xl:visible"
             hoverable
             style={{
-              width: 300,
+              width: 280,
               height: 450,
-              boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+              // boxShadow: '5px 8px 20px 5px rgba(208, 216, 243, 0.6)',
+
               textAlign: 'center',
             }}
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
-                width: 200,
-                height: 200,
+                width: 180,
+                height: 180,
                 position: 'relative',
-                bottom: 10,
+                bottom: 40,
+                top: 10,
               }}
-              src="/Assets/images/facultyimg12.png"
+              src="/assets/images/facultyimg12.png"
+              className="outline-offset-2 outline outline-indigo-600"
             />
-            <Typography
-              style={{ fontWeight: 'bold', paddingTop: 3, fontSize: 17 }}
-            >
-              MS.STELLA J
-            </Typography>
-            <Typography>
-              <h5>Assistant Professor</h5>
-            </Typography>
-            <br />
-            <Typography>
-              <h5>stella@xavier.ac.in</h5>
-            </Typography>
-            <Typography>
-              <h5>+91 8291606668</h5>
-            </Typography>
-            <Typography>
-              <h5> B.E. ECE , M.E. Applied Electronics.</h5>
-            </Typography>
-            <Button className="mt-1 text-white bg-blue-500" block="">
-              More Detail
-            </Button>
+
+            <div className="mt-7">
+              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+                MS.STELLA J
+              </h1>
+
+              <p>Assistant Professor</p>
+
+              <p className="mt-8 text-base text-[#000000;] ">
+                stella@xavier.ac.in
+              </p>
+
+              <p className="text-base text-[#151515;] ">
+                +91 8291606668 <br /> B.E. ECE, M.E. Applied Electronics.
+              </p>
+            </div>
           </Card>
         </SplideSlide>
       </Splide>
