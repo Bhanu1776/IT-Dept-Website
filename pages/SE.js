@@ -1,11 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Hello from '../components/SEAccordian';
+// import Footer from '../components/Footer';
 
 const SE = () => (
   <>
     <Navbar />
-    <Footer />
+    <Hello />
+    {/* <Footer /> */}
   </>
 );
 
