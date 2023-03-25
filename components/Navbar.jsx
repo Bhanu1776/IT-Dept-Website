@@ -5,8 +5,18 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const hidden = () => {
+    if (typeof window !== 'undefined' && window.document) {
+      document.body.style.overflow = 'hidden';
+    }
+  };
+  const unset = () => {
+    document.body.style.overflow = 'unset';
+  };
+
   const handleClick = () => {
     setOpen(!open);
+    open ? unset() : hidden();
   };
   return (
     <nav className="bg-[#202124] px-7  py-3.5 shadow sticky top-0 left-0 z-20 w-full flex flex-wrap items-center justify-between">
@@ -22,7 +32,7 @@ const Navbar = () => {
       </div>
       <div className="pl-10">
         <ul
-          className={` mx-auto md:flex md:items-center z-[-1] md:z-auto md:static bg-[#202124] absolute  w-full left-0 md:w-auto  md:py-0 py-4 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ${
+          className={`  mx-auto md:flex md:items-center z-[-1] md:z-auto md:static bg-[#202124] absolute  w-full left-0 md:w-auto  md:py-0 py-4 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ${
             open ? 'top-[60px] opacity-100' : 'top-[-400px] opacity-0'
           }`}
         >
