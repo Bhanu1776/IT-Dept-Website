@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
@@ -5,19 +8,19 @@ const HeroCarousel = () => {
   const slides = [
     {
       key: 1,
-      image: '/assets/images/IT_staff.jpg',
+      image: '/assets/images/carousel/IT_staff.jpg',
     },
     {
       key: 2,
-      image: '/assets/images/TE_IT.jpg',
+      image: '/assets/images/carousel/TE_IT.jpg',
     },
     {
       key: 3,
-      image: '/assets/images/SE_IT_STAFF.jpg',
+      image: '/assets/images/carousel/SE_IT_STAFF.jpg',
     },
     {
       key: 4,
-      image: '/assets/images/Staff.jpg',
+      image: '/assets/images/carousel/Staff.jpg',
     },
   ];
 
