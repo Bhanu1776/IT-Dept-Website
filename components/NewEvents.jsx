@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
 const NewEvents = () => (
@@ -10,7 +11,7 @@ const NewEvents = () => (
         <img
           alt="gallery"
           className="absolute inset-0 block object-cover object-center w-full h-full opacity-25 rounded-xl"
-          src="/Assets/images/TE_IT.jpg"
+          src="/Assets/images/carousel/TE_IT.jpg"
         />
         <div className="relative z-10 w-full text-left top-[95%]">
           <h2 className="mb-2 text-2xl font-medium text-white title-font">
@@ -26,7 +27,7 @@ const NewEvents = () => (
         <div className="shadow-xl 2xl:h-[370px] xl:h-[370px] lg:h-[335px] rounded-xl ">
           <img
             className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/assets/images/SE_IT_STAFF.jpg"
+            src="/assets/images/carousel/SE_IT_STAFF.jpg"
             alt=""
           />
           <div className="mx-2 my-2">
@@ -40,7 +41,7 @@ const NewEvents = () => (
         <div className="shadow-xl 2xl:h-[370px] xl:h-[370px] lg:h-[335px] rounded-xl ">
           <img
             className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/assets/images/SE_IT_STAFF.jpg"
+            src="/assets/images/carousel/SE_IT_STAFF.jpg"
             alt=""
           />
           <div className="mx-2 my-2">
@@ -54,7 +55,7 @@ const NewEvents = () => (
         <div className="shadow-xl 2xl:h-[370px] xl:h-[370px] lg:h-[335px] rounded-xl ">
           <img
             className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/assets/images/SE_IT_STAFF.jpg"
+            src="/assets/images/carousel/SE_IT_STAFF.jpg"
             alt=""
           />
           <div className="mx-2 my-2">
@@ -68,7 +69,7 @@ const NewEvents = () => (
         <div className="shadow-xl 2xl:h-[370px] xl:h-[370px] lg:h-[335px] rounded-xl ">
           <img
             className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/assets/images/SE_IT_STAFF.jpg"
+            src="/assets/images/carousel/SE_IT_STAFF.jpg"
             alt=""
           />
           <div className="mx-2 my-2">
