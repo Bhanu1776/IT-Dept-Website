@@ -61,7 +61,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -71,22 +71,22 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg1.png"
+              src="/assets/images/facultyimg1.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
             <div className="mt-7">
-              <h1 className="font-headings font-extrabold text-xl text-[#353535]">
+              <h1 className="font-headings font-extrabold text-xl text-[#373535]">
                 MEENA UGALE
               </h1>
 
               <p>HOD, Assistant Professor </p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 meena.u@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +919867646658 <br /> M.E. (Computer Engineering)
               </p>
             </div>
@@ -102,7 +102,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -112,7 +112,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg2.png"
+              src="/assets/images/facultyimg2.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -123,11 +123,11 @@ const Faculty = () => (
 
               <p>Associate Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 johnrose@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +919833627714 <br /> MS (Computer Engineering)
               </p>
             </div>
@@ -143,7 +143,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -153,7 +153,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg3.png"
+              src="/assets/images/facultyimg3.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -164,11 +164,11 @@ const Faculty = () => (
 
               <p>Adjunct Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 thomas.s@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +1 (408) 724-109 <br /> M.E. (Computer Science)
               </p>
             </div>
@@ -184,7 +184,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -194,7 +194,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg4.png"
+              src="/assets/images/facultyimg4.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -205,11 +205,11 @@ const Faculty = () => (
 
               <p>Assistant Professor </p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 chhaya.n@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +918097181363 <br /> M.E. (Computer Engineering)
               </p>
             </div>
@@ -225,7 +225,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -235,7 +235,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg5.png"
+              src="/assets/images/facultyimg5.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -246,11 +246,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 jaychand.u@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +919029459173 <br /> M.E. (Computer Engineering)
               </p>
             </div>
@@ -266,7 +266,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -276,7 +276,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg6.png"
+              src="/assets/images/facultyimg6.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -287,11 +287,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 martina.r@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +919869279279 <br /> M.E (Computer Engineering)
               </p>
             </div>
@@ -307,7 +307,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -317,7 +317,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg7.png"
+              src="/assets/images/facultyimg7.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -328,11 +328,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 jyotsna.m@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +919920326161 <br /> M.E (Computer Engineering)
               </p>
             </div>
@@ -348,7 +348,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -358,7 +358,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg8.png"
+              src="/assets/images/facultyimg8.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -369,11 +369,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 suvarna.b@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +918424972799 <br /> M.E (Information Technology)
               </p>
             </div>
@@ -389,7 +389,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -399,7 +399,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg9.png"
+              src="/assets/images/facultyimg9.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -410,11 +410,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 sulochana.d@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +918652231801 <br /> M.E (Computer Engineering)
               </p>
             </div>
@@ -430,7 +430,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -440,7 +440,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg10.png"
+              src="/assets/images/facultyimg10.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -451,11 +451,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 amit.n@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +917977003366 <br /> M.E. (Computer Science)
               </p>
             </div>
@@ -471,7 +471,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -481,7 +481,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg11.png"
+              src="/assets/images/facultyimg11.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -492,11 +492,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 jaya.j@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +919082185124 <br /> M.E. (Computer Engineering)
               </p>
             </div>
@@ -512,7 +512,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
+            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -522,7 +522,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/faculty/facultyimg12.png"
+              src="/assets/images/facultyimg12.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -533,11 +533,11 @@ const Faculty = () => (
 
               <p>Assistant Professor</p>
 
-              <p className="mt-8 text-base text-[#000000;] ">
+              <p className="mt-8 text-base text-[#000000] ">
                 stella@xavier.ac.in
               </p>
 
-              <p className="text-base text-[#151515;] ">
+              <p className="text-base text-[#151515] ">
                 +91 8291606668 <br /> B.E. ECE, M.E. Applied Electronics.
               </p>
             </div>
