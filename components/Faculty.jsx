@@ -61,7 +61,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -71,7 +71,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg1.png"
+              src="/assets/images/faculty/facultyimg1.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -102,7 +102,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -112,7 +112,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg2.png"
+              src="/assets/images/faculty/facultyimg2.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -143,7 +143,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -153,7 +153,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg3.png"
+              src="/assets/images/faculty/facultyimg3.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -184,7 +184,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -194,7 +194,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg4.png"
+              src="/assets/images/faculty/facultyimg4.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -225,7 +225,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -235,7 +235,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg5.png"
+              src="/assets/images/faculty/facultyimg5.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -266,7 +266,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -276,7 +276,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg6.png"
+              src="/assets/images/faculty/facultyimg6.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -307,7 +307,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -317,7 +317,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg7.png"
+              src="/assets/images/faculty/facultyimg7.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -348,7 +348,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -358,7 +358,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg8.png"
+              src="/assets/images/faculty/facultyimg8.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -389,7 +389,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -399,7 +399,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg9.png"
+              src="/assets/images/faculty/facultyimg9.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -430,7 +430,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -440,7 +440,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg10.png"
+              src="/assets/images/faculty/facultyimg10.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -471,7 +471,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -481,7 +481,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg11.png"
+              src="/assets/images/faculty/facultyimg11.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
@@ -512,7 +512,7 @@ const Faculty = () => (
 
               textAlign: 'center',
             }}
-            className=" ml-12 rounded-2xl mt-5 mb-7 drop-shadow-xl"
+            className="mt-5 ml-12 rounded-2xl mb-7 drop-shadow-xl"
           >
             <Avatar
               style={{
@@ -522,7 +522,7 @@ const Faculty = () => (
                 bottom: 40,
                 top: 10,
               }}
-              src="/assets/images/facultyimg12.png"
+              src="/assets/images/faculty/facultyimg12.png"
               className="outline-offset-2 outline outline-indigo-600"
             />
 
