@@ -1,6 +1,5 @@
 import React from 'react';
-import AdminPanel from '@/components/AdminPanel';
 
-const admin = () => <AdminPanel />;
+const admin = () => <h1>Admin</h1>;
 
 export default admin;
