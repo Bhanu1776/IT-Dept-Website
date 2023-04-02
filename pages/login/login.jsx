@@ -3,15 +3,17 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useRouter } from 'next/router';
 import { MdEmail, MdLock, MdVisibilityOff, MdVisibility } from 'react-icons/md';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { addDoc, collection } from 'firebase/firestore';
 import React, { useState } from 'react';
 import Link from 'next/link';
 // import { app } from '../../lib/firebase';
-import { auth } from '../../lib/firebase';
+import { auth, firestore } from '../../lib/firebase';
 
 const Login = () => {
-  // const auth = getAuth(app);
   const router = useRouter();
+
+  const [role, setRole] = useState('');
 
   const [email, setEmail] = useState('');
 
@@ -26,9 +28,24 @@ const Login = () => {
     setPasswordType('password');
   };
 
+  // const { uid } = auth.currentUser;
+  const dbRef = collection(firestore, 'users');
+
   const handleLogin = async () => {
+    if (email.includes('@xavier.ac.in')) {
+      setRole('faculty');
+    }
+    if (email.includes('@student.xavier.ac.in')) {
+      setRole('student');
+    } else {
+      setRole('guest');
+    }
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      await addDoc(dbRef, {
+        email: `${email}`,
+        role: `${role}`,
+      });
       alert('Logged In successfully');
       router.push('/homepage');
     } catch (err) {
