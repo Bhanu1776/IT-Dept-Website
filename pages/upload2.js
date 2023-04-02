@@ -12,16 +12,6 @@ const FileUpload = () => {
     name: 'file',
     multiple: true,
     onChange(info) {
-      const { status } = info.file;
-      if (status !== 'uploading') {
-        console.log(info.file, info.fileList);
-      }
-      if (status === 'done') {
-        message.success(`${info.file.name} file uploaded successfully.`);
-        console.log(filesup);
-      } else if (status === 'error') {
-        message.error(`${info.file.name} file upload failed.`);
-      }
       setFiles(info.fileList);
     },
     onDrop(e) {
