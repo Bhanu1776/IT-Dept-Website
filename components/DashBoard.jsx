@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { Button, Modal } from 'antd';
+import { Modal } from 'antd';
 import SearchBox from './SearchBox';
 
 const DashBoard = () => {

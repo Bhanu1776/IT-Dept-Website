@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 import { useRouter } from 'next/router';
-import Sidebar from '@/components/Sidebar';
+import Sidebar from '../components/Sidebar';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
