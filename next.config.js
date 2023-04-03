@@ -12,7 +12,7 @@ const nextConfig = {
     NEXT_PUBLIC_MESSAGIN_SENDER_ID: process.env.NEXT_PUBLIC_MESSAGIN_SENDER_ID,
     NEXT_PUBLIC_APP_ID: process.env.NEXT_PUBLIC_APP_ID,
     NEXT_PUBLIC_MEASUREMENT_ID: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
-    API_KEY: process.env.YT_API,
+    NEXT_PUBLIC_API: process.env.YT_API,
   },
 };
 

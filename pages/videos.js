@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 
-// const API_KEY = 'AIzaSyC_Fl28pvpbP4ES5xRiHeUQ2eIrB9BSpsI';
-const API_KEY = process.env.YT_API;
-// console.log('API KEY :', API_KEY);
+const API_KEY = process.env.NEXT_PUBLIC_YT_API;
+
 // const channelId = 'UCPcOCuFaHs1AuldTgjgtOLW';   //* College ChannelID
 const channelId = 'UCmFt1y9cbHx3amPRctMEyvA'; //* Temporary Testing channelID
 
@@ -33,7 +32,7 @@ const videos = () => {
           // eslint-disable-next-line react/jsx-key
           <div className="flex flex-row">
             <iframe
-              width="560"
+              width="460"
               height="315"
               src={item.VideoLink}
               title="YouTube video player"
