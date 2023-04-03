@@ -28,6 +28,8 @@ const DashBoard = () => {
               ? 'Question-Banks Panel'
               : router.asPath === '/uploadTT'
               ? 'Time-Table Panel'
+              : router.asPath === '/settings'
+              ? 'Settings'
               : 'Hello, Mrunal V.'}
           </h1>
         </div>

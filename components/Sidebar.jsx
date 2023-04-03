@@ -178,7 +178,7 @@ const Sidebar = ({ children }) => {
               ) : null}
             </div>
           </Link>
-          <Link href="/quizzes">
+          <Link href="/settings">
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'

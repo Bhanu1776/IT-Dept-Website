@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
       router.asPath === '/uploadNotes' ||
       router.asPath === '/uploadQB' ||
       router.asPath === '/uploadTT' ||
+      router.asPath === '/settings' ||
       router.asPath === '/uploadQuizzes' ? (
         <Sidebar>
           <Component {...pageProps} />
