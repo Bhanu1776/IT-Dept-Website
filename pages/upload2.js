@@ -1,7 +1,8 @@
-import { message, Upload, Button, Row, Col, Card } from 'antd';
-import { uploadBytes, ref, storage } from 'firebase/storage';
 import { useState } from 'react';
 import Image from 'next/image';
+import { uploadBytes, ref } from 'firebase/storage';
+import { message, Upload, Button, Row, Col, Card } from 'antd';
+import { storage } from '../lib/firebase.jsx';
 import Folder from '../public/assets/images/Folder.png';
 
 const FileUpload = () => {
@@ -11,16 +12,6 @@ const FileUpload = () => {
     name: 'file',
     multiple: true,
     onChange(info) {
-      const { status } = info.file;
-      if (status !== 'uploading') {
-        console.log(info.file, info.fileList);
-      }
-      if (status === 'done') {
-        message.success(`${info.file.name} file uploaded successfully.`);
-        console.log(filesup);
-      } else if (status === 'error') {
-        message.error(`${info.file.name} file upload failed.`);
-      }
       setFiles(info.fileList);
     },
     onDrop(e) {
@@ -48,11 +39,6 @@ const FileUpload = () => {
       console.log(e);
       alert('File not Uploaded');
     }
-  };
-
-  const handleRemoveFile = () => {
-    setFiles(undefined);
-    alert('Files removed');
   };
 
   return (

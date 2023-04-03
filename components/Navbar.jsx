@@ -74,7 +74,7 @@ const Navbar = () => {
           </li>
           <button
             type="button"
-            className="inline-block px-5 py-2 my-5 ml-10 text-sm font-medium text-center text-white bg-blue-700 rounded-lg md:hidden hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="block w-full py-2 my-5 ml-10 text-sm font-medium text-center text-white bg-blue-700 rounded-lg mr- md:hidden hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Login
           </button>
@@ -89,7 +89,7 @@ const Navbar = () => {
         </button>
         <span
           className="block p-1 text-3xl cursor-pointer md:hidden"
-          onClick={handleClick}
+          // onClick={handleClick}
         >
           {open ? (
             <AiOutlineClose className="text-white" name="close" />
