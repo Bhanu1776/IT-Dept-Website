@@ -1,5 +1,5 @@
 import React from 'react';
-import Words from '@/components/Words';
+import Words from '../components/Words';
 
 const uploadNotes = () => (
   <div className="p-2">
