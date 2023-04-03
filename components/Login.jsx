@@ -4,7 +4,7 @@ import { MdEmail, MdLock, MdVisibilityOff, MdVisibility } from 'react-icons/md';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { auth } from '../lib/firebase.jsx';
+// import { auth } from '../lib/firebase.jsx';
 
 const Login = () => {
   const router = useRouter();
@@ -33,71 +33,76 @@ const Login = () => {
   };
 
   return (
-    <div className=" flex h-screen w-full flex-col justify-center items-center">
-      <div className=" w-[420px] h-[50%] flex flex-col justify-between items-center p-5 bg-white rounded-lg border-[1px] border-gray-200 shadow-md shadow-gray-200">
+    <div className=" flex h-screen w-full flex-col justify-center items-center bg-Mischka">
+      <div className="h-[80%] flex flex-col justify-between bg-Lavender-Blush items-center p-5 rounded-[40px] border-[4px] border-white">
         {/* Login layout */}
-        <div className=" w-full mb-4 flex flex-col justify-center items-center">
-          <div className=" uppercase">
-            <h2 className=" text-xl font-bold tracking-wider">Login</h2>
-          </div>
+        <div className=" w-full mt-6 flex flex-col justify-center items-center">
           <div>
             <p className=" text-gray-400">Xavier Institute of Engineering</p>
           </div>
-        </div>
-
-        <div className=" w-full p-1 border-2 border-gray-100 rounded-md flex items-center justify-start bg-transparent">
-          {/** Email */}
-          <div className=" text-[#214ED3] m-2">
-            <MdEmail size={20} />
+          <div className="">
+            <h2 className=" text-3xl font-extrabold font-pops tracking-wider">Welcome Back!</h2>
           </div>
-          <div className="w-full">
-            <input
-              className=" p-2 w-full outline-none "
-              type="email"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              name="email"
-              placeholder="Enter Email"
-            />
+          <div>
+            <h3 className='font-pops text-lg'>Student Name</h3>
           </div>
         </div>
 
-        <div className=" w-full p-1 border-2 border-gray-100 rounded-md flex items-center justify-between bg-transparent">
-          {/** Email */}
-          <div className=" flex justify-start w-full">
-            <div className=" text-[#214ED3] m-2">
-              <MdLock size={20} />
+        
+        <div className='flex flex-col gap-5'>
+          <div className=" w-full p-1 flex bg-transparent">
+            {/** Email */}
+            <div className=" text-[#000000] mr-2 mt-3">
+              <MdEmail size={20} />
             </div>
             <div className="w-full">
               <input
-                className=" p-2 w-full outline-none "
-                type={passwordType}
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
-                name="password"
-                placeholder="Enter Password"
+                className=" p-3 w-full border-none rounded-xl "
+                type="email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                name="email"
+                placeholder="Enter Email"
               />
             </div>
           </div>
-          <div className=" cursor-pointer flex " onClick={togglePassword}>
-            {passwordType === 'password' ? (
-              <MdVisibilityOff size={20} className=" text-gray-400" />
-            ) : (
-              <MdVisibility size={20} className=" text-black" />
-            )}
+
+          <div className=" w-full p-1  flex items-center justify-between bg-transparent">
+            {/** Password */}
+            <div className=" flex justify-start w-full">
+              <div className=" text-[#000000] mr-2 mt-3">
+                <MdLock size={20} />
+              </div>
+              <div className="w-full relative">
+                <input
+                  className=" p-3 w-full border-none rounded-xl"
+                  type={passwordType}
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                  name="password"
+                  placeholder="Enter Password"/>
+                  <div className=" cursor-pointer flex absolute bottom-[30%] left-[87%]" onClick={togglePassword}>
+              {passwordType === 'password' ? (
+                <MdVisibilityOff size={20} className=" text-gray-400" />
+              ) : (
+                <MdVisibility size={20} className=" text-black" />
+              )}
+            </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className=" w-full">
+        <div className="">
           <button
             onClick={handleLogin}
-            className=" bg-[#214ED3] uppercase tracking-wider text-white hover:opacity-[0.8] active:opacity-[0.5] p-4 rounded-md w-full transition-all ease-in duration-150"
+            className=" bg-[#000000] uppercase tracking-wider text-white hover:opacity-[0.8] active:opacity-[0.5] py-2.5 px-12 rounded-md mx-auto transition-all ease-in duration-150"
           >
             Login
           </button>
         </div>
 
-        <div className=" flex items-center text-sm">
+        <div className=" flex items-center text-sm mb-3">
           <Link href="/forgot-password">
             <p className=" text-gray-500 underline-offset-2  hover:underline cursor-pointer">
               Forgot password?{' '}
