@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 // eslint-disable-next-line import/no-extraneous-dependencies
 const colors = require('tailwindcss/colors');
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -49,6 +50,7 @@ module.exports = {
         headings: ['Manrope', ...defaultTheme.fontFamily.sans],
         fancy: ['Sriracha'],
         fira: ['Fira Sans', 'sans-serif'],
+        pops: ['Poppins'],
       },
       colors: {
         orange: colors.orange,
@@ -59,6 +61,8 @@ module.exports = {
         darker: '#0d131f',
         midnight: '#1e293b',
         'midnight-hover': '#334155',
+        Mischka: '#DCD9E2',
+        'Lavender-Blush': '#F5F3F4',
         emerald: colors.emerald,
         fuchsia: colors.fuchsia,
         amber: colors.amber,

@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap'); /**For Headings*/
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); /** Sans Modern */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700&display=swap'); /** Fira Sans */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap"); /**For Headings*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); /** Sans Modern */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700&display=swap"); /** Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /**Poppins*/
 
 @tailwind base;
 @tailwind components;
@@ -13,9 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-body {
-  background: #fafcff;
-}
+
 * {
   margin: 0;
   padding: 0;
