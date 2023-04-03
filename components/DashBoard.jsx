@@ -17,17 +17,19 @@ const DashBoard = () => {
       <div className="rounded-lg  border-[1px] p-1 flex justify-between items-center bg-white">
         {/** Action Page */}
         <div className=" ml-4">
-          {router.asPath === '/admin'
-            ? 'DashBoard'
-            : router.asPath === '/uploadQuizzes'
-            ? 'Quizz Panel'
-            : router.asPath === '/uploadNotes'
-            ? 'Notes Panel'
-            : router.asPath === '/uploadQB'
-            ? 'Question-Banks Panel'
-            : router.asPath === '/uploadTT'
-            ? 'Time-Table Panel'
-            : 'DashBoard'}
+          <h1 className=" text-blue-900 tracking-wider font-extrabold">
+            {router.asPath === '/admin'
+              ? 'Hello, Mrunal V.'
+              : router.asPath === '/uploadQuizzes'
+              ? 'Quizz Panel'
+              : router.asPath === '/uploadNotes'
+              ? 'Notes Panel'
+              : router.asPath === '/uploadQB'
+              ? 'Question-Banks Panel'
+              : router.asPath === '/uploadTT'
+              ? 'Time-Table Panel'
+              : 'Hello, Mrunal V.'}
+          </h1>
         </div>
         {/** Search & User Info */}
         <div className="flex relative gap-2 justify-between items-center">

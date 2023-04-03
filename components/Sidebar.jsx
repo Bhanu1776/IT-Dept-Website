@@ -63,7 +63,7 @@ const Sidebar = ({ children }) => {
 
         <div className=" flex gap-4 justify-between items-center">
           <Link href="/admin">
-            <div className=" flex justify-center items-center">
+            <div className=" cursor-pointer flex justify-center items-center">
               {/** Logo */}
               <div>
                 <IoLogoXing className=" text-blue-600" size={35} />

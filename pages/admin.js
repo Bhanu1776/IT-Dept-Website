@@ -1,5 +1,6 @@
 import React from 'react';
+import AdminStats from '../components/AdminStats';
 
-const admin = () => <h1>Admin</h1>;
+const admin = () => <AdminStats />;
 
 export default admin;
