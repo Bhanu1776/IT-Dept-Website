@@ -1,9 +1,6 @@
 import React from 'react';
+import AdminNotes from '../components/AdminNotes';
 
-const uploadNotes = () => (
-  <div className="p-2">
-    <h1>Notes</h1>
-  </div>
-);
+const uploadNotes = () => <AdminNotes />;
 
 export default uploadNotes;
