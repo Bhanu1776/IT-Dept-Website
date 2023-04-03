@@ -12,7 +12,7 @@ import { MdOutlineClose, MdOutlineMenu, MdOutlineQuiz } from 'react-icons/md';
 import { Modal } from 'antd';
 
 const MobileNavbar = ({ nav, setNav }) => {
-  const [modal1Open, setModal1Open] = useState(true);
+  const [modal1Open, setModal1Open] = useState(false);
   return (
     <>
       <div className=" md:hidden flex h-16 px-4 bg-[#214ED3] text-white justify-between items-center">
