@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Collapse, Divider, Space, Text } from 'antd';
 
 const SEAccordian = () => {
@@ -12,9 +13,12 @@ const SEAccordian = () => {
         className="shadow-xl bg-sky-200"
       >
         <Panel header="&nbsp;&nbsp;SEM 3" key="1" className="text-lg font-bold">
-          <h5 className="px-4 text-base font-normal cursor-pointer">
-            Syllabus
-          </h5>
+          <Link href="/pdfViewer">
+            <h5 className="px-4 text-base font-normal cursor-pointer">
+              Syllabus
+            </h5>
+          </Link>
+
           <Divider />
           <h5 className="px-4 text-base font-normal cursor-pointer">
             TimeTable
