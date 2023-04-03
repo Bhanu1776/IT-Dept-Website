@@ -5,8 +5,6 @@ import React, { useEffect, useState } from 'react';
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
-  MdOutlineClose,
-  MdOutlineMenu,
   MdOutlineQuiz,
 } from 'react-icons/md';
 import { IoLogoXing } from 'react-icons/io';
@@ -14,14 +12,13 @@ import { BiBook, BiLogOut } from 'react-icons/bi';
 import { AiOutlineSchedule, AiOutlineSetting } from 'react-icons/ai';
 import { CgNotes } from 'react-icons/cg';
 import { HiOutlinePlusCircle } from 'react-icons/hi';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
 import DashBoard from './DashBoard';
+import MobileNavbar from './MobileNavbar';
 
 const Sidebar = ({ children }) => {
   const [open, setOpen] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
   const [showDiv, setShowDiv] = useState(false);
 
   useEffect(() => {
@@ -46,11 +43,11 @@ const Sidebar = ({ children }) => {
   }, [open]);
 
   return (
-    <div className="flex">
+    <div className={`flex ${isMobile ? 'flex-col gap-1' : ''}`}>
       <div
         className={`relative ${
           open ? ' w-64' : 'w-20'
-        } min-h-screen p-2 py-4 bg-white border-r-[1px] flex flex-col gap-4 justify-between items-center transition-all ease-linear duration-[150ms]`}
+        } min-h-screen p-2 py-4 bg-white border-r-[1px] hidden md:flex flex-col gap-4 justify-between items-center transition-all ease-linear duration-[150ms]`}
       >
         {/** Open/Close */}
         <div
@@ -189,7 +186,7 @@ const Sidebar = ({ children }) => {
             >
               <div>
                 <AiOutlineSetting
-                  className=" text-blue-600 group-hover:text-white"
+                  className=" text-blue-600 group-hover:text-white group-hover:rotate-90 duration-200"
                   size={30}
                 />
               </div>
@@ -221,8 +218,12 @@ const Sidebar = ({ children }) => {
           </Link>
         </div>
       </div>
-      {/** DashBoard Pages */}
-      <div className="px-4 flex flex-col gap-2 flex-1 w-full h-screen overflow-y-auto">
+
+      {/** Mobile Screen Navbar */}
+      <MobileNavbar nav={nav} setNav={setNav} />
+
+      {/** DashBoard & Pages */}
+      <div className="px-2 md:px-4 flex flex-col gap-2 flex-1 w-full h-screen overflow-y-auto">
         {/** DashBoard */}
         <DashBoard />
         {/** Pages are Load here */}

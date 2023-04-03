@@ -34,7 +34,7 @@ const DashBoard = () => {
           <SearchBox searchText={searchText} setSearchText={setSearchText} />
           <div
             onClick={setModal1Open}
-            className=" border-blue-500 border-2 flex justify-center items-center rounded-full  "
+            className=" cursor-pointer border-blue-500 border-2 hidden md:flex justify-center items-center rounded-full  "
           >
             <Image
               className=" rounded-full object-center object-cover "
