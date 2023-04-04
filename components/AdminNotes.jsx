@@ -78,7 +78,6 @@ const AdminNotes = () => {
     }
   };
   const [filesup, setFiles] = useState([]);
-  const fileSubmitted = filesup[0].name;
 
   const { Dragger } = Upload;
   const props = {
@@ -97,7 +96,7 @@ const AdminNotes = () => {
       const file = filesup[0];
       const storageRef = ref(
         storage,
-        `notes/${year}/${sem}/${subject}/${file}`
+        `notes/${year}/${sem}/${subject}/${file.name}`
       );
       const uploadFile = await uploadBytes(storageRef, file);
       console.log(`File uploaded: ${uploadFile.ref}`);
