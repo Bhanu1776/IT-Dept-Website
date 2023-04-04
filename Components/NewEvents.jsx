@@ -1,87 +1,43 @@
-import React from 'react';
+import React from 'react'
+import NewEventsCards from './NewEventsCards'
+import { Badge } from 'antd'
 
-const NewEvents = () => (
-  <div className="h-[100vh] 2xl:mx-[200px] xl:mx-[100px] my-10">
-    <h1 className="mt-10 text-4xl text-center font-fira text-bold">
-      Latest Events
-    </h1>
-    <div className="grid grid-cols-2 pt-5 2xl:gap-0 xl:gap-5">
-      <div className="relative flex flex-wrap 2xl:w-[700px] px-10 py-32 mb-4 bg-gray-800 h-[820px] rounded-xl">
-        <img
-          alt="gallery"
-          className="absolute inset-0 block object-cover object-center w-full h-full opacity-25 rounded-xl"
-          src="/Assets/images/TE_IT.jpg"
-        />
-        <div className="relative z-10 w-full text-left top-[95%]">
-          <h2 className="mb-2 text-2xl font-medium text-white title-font">
-            Event Name
-          </h2>
-          <p className="leading-relaxed text-white">
-            It is a long established fact that a reader will be distracted by
-            the readable content
-          </p>
+const NewEvents = () => {
+
+  return (
+    <>
+      <div className='h-screen'>
+        <div className='text-center text-3xl font-bold'>
+          <h1>Latest Events</h1>
         </div>
-      </div>
-      <div className="grid grid-cols-2 2xl:gap-20 xl:gap-5 h-[800px]">
-        <div className="shadow-xl h-[370px] rounded-xl 2xl:w-[400px]">
-          <img
-            className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/Assets/images/TE_IT.jpg"
-            alt=""
-          />
-          <div className="mx-2 my-2">
-            <h1 className="text-xl font-semibold">Event Name</h1>
-            <h1 className="text-lg">
-              It is a long established fact that a reader will be distracted by
-              the readable content{' '}
-            </h1>
+
+        <div className='h-[80%] mt-5 md:mx-10 xxsm:mx-5 flex md:flex-row xxsm:flex-col gap-5'>
+          
+          {/* Section 1 */}
+          <div className='relative p-5 md:w-[45%] bg-gray-800 rounded-lg shadow-xl'>
+            <img className='absolute inset-0 h-[100%] block object-cover object-center opacity-50 rounded-lg w-[100%]' src="/assets/images/SE_IT_STAFF.jpg" alt="" />
+            <div className="relative z-10 w-full text-left md:top-[80%]">
+              <h2 className="mb-2 md:text-2xl font-medium text-white title-font">
+                Event Name
+              </h2>
+              <p className="leading-relaxed md:text-[15px] xxsm:text-[10px] text-white">
+                It is a long established fact that a reader will be distracted by
+                the readable content
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="shadow-xl h-[370px] rounded-xl 2xl:w-[400px]">
-          <img
-            className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/Assets/images/TE_IT.jpg"
-            alt=""
-          />
-          <div className="mx-2 my-2">
-            <h1 className="text-xl font-semibold">Event Name</h1>
-            <h1 className="text-lg">
-              It is a long established fact that a reader will be distracted by
-              the readable content{' '}
-            </h1>
-          </div>
-        </div>
-        <div className="shadow-xl h-[370px] rounded-xl 2xl:w-[400px]">
-          <img
-            className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/Assets/images/TE_IT.jpg"
-            alt=""
-          />
-          <div className="mx-2 my-2">
-            <h1 className="text-xl font-semibold">Event Name</h1>
-            <h1 className="text-lg">
-              It is a long established fact that a reader will be distracted by
-              the readable content{' '}
-            </h1>
-          </div>
-        </div>
-        <div className="shadow-xl h-[370px] rounded-xl 2xl:w-[400px]">
-          <img
-            className="h-[60%] w-[100vw] rounded-tl-xl rounded-tr-xl"
-            src="/Assets/images/TE_IT.jpg"
-            alt=""
-          />
-          <div className="mx-2 my-2">
-            <h1 className="text-xl font-semibold">Event Name</h1>
-            <h1 className="text-lg">
-              It is a long established fact that a reader will be distracted by
-              the readable content{' '}
-            </h1>
+
+          {/* Section 2 */}
+          <div className='grid md:grid-cols-2 xxsm:grid-cols-1 gap-5 md:w-[55%]'>
+            <NewEventsCards cardname="card1" cardimg="/assets/images/SE_IT_STAFF.jpg" eventname="Event Name"/>
+            <NewEventsCards cardname="card2" cardimg="/assets/images/SE_IT_STAFF.jpg" eventname="Event Name"/>
+            <NewEventsCards cardname="card3" cardimg="/assets/images/SE_IT_STAFF.jpg" eventname="Event Name"/>
+            <NewEventsCards cardname="card4" cardimg="/assets/images/SE_IT_STAFF.jpg" eventname="Event Name"/>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-);
+    </>
+  )
+}
 
-export default NewEvents;
+export default NewEvents
