@@ -1,5 +1,4 @@
 import React from 'react';
-import { Badge } from 'antd';
 import NewEventsCards from './NewEventCards';
 
 const NewEvents = () => (
@@ -13,7 +12,7 @@ const NewEvents = () => (
       <div className="relative p-5 md:w-[45%] bg-gray-800 rounded-lg shadow-xl">
         <img
           className="absolute inset-0 h-[100%] block object-cover object-center opacity-50 rounded-lg w-[100%]"
-          src="/assets/images/carousel/SE_IT_STAFF.jpg"
+          src="/assets/images/carousel/SE_IT_STAFF.jpeg"
           alt=""
         />
         <div className="relative z-10 w-full text-left md:top-[80%]">
@@ -31,22 +30,22 @@ const NewEvents = () => (
       <div className="grid md:grid-cols-2 xxsm:grid-cols-1 gap-5 md:w-[55%]">
         <NewEventsCards
           cardname="card1"
-          cardimg="/assets/images/carousel/SE_IT_STAFF.jpg"
+          cardimg="/assets/images/carousel/SE_IT_STAFF.jpeg"
           eventname="Event Name"
         />
         <NewEventsCards
           cardname="card2"
-          cardimg="/assets/images/carousel/SE_IT_STAFF.jpg"
+          cardimg="/assets/images/carousel/SE_IT_STAFF.jpeg"
           eventname="Event Name"
         />
         <NewEventsCards
           cardname="card3"
-          cardimg="/assets/images/carousel/SE_IT_STAFF.jpg"
+          cardimg="/assets/images/carousel/SE_IT_STAFF.jpeg"
           eventname="Event Name"
         />
         <NewEventsCards
           cardname="card4"
-          cardimg="/assets/images/carousel/SE_IT_STAFF.jpg"
+          cardimg="/assets/images/carousel/SE_IT_STAFF.jpeg"
           eventname="Event Name"
         />
       </div>
