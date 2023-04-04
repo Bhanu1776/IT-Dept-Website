@@ -20,6 +20,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: #fafcff;
+}
 html {
   scroll-behavior: smooth;
   /* scrollbar-color: #14B8A6;
