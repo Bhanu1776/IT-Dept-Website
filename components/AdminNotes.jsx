@@ -8,6 +8,7 @@ const AdminNotes = () => {
   const [showForm, setShowForm] = useState(false);
   const [year, setYear] = useState('');
   const [sem, setSem] = useState('');
+  const [subject, setSubject] = useState('');
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState('');
   const [isUploadDisabled, setIsUploadDisabled] = useState(true);
@@ -34,6 +35,44 @@ const AdminNotes = () => {
       setIsUploadDisabled(false);
     } else {
       setIsUploadDisabled(true);
+    }
+  };
+  const getSemesterOptions = () => {
+    switch (year) {
+      case 'SE':
+        return ['III', 'IV'];
+      case 'TE':
+        return ['V', 'VI'];
+      case 'BE':
+        return ['VII', 'VIII'];
+      default:
+        return [];
+    }
+  };
+  const handleSubjectChange = (event) => {
+    setSubject(event.target.value);
+    if (event.target.value && sem && year && file) {
+      setIsUploadDisabled(false);
+    } else {
+      setIsUploadDisabled(true);
+    }
+  };
+  const getSubjectOptions = () => {
+    switch (sem) {
+      case 'III':
+        return ['EM-III', 'DSA', 'DBMS', 'PCOM', 'PCPF'];
+      case 'IV':
+        return ['EM-IV', 'CNND', 'OS', 'AT', 'COA'];
+      case 'V':
+        return ['IP', 'CNS', 'EEB', 'SE', 'ADSA'];
+      case 'VI':
+        return ['DMBI', 'WEBX', 'WT', 'AI_DS-1', 'GIT'];
+      case 'VII':
+        return ['AI_DS-II', 'IOE', 'STQA', 'IRS', 'DMM'];
+      case 'VIII':
+        return ['BDA', 'IOE', 'UID', 'PM'];
+      default:
+        return [];
     }
   };
   return (
@@ -105,10 +144,10 @@ const AdminNotes = () => {
                   </select>
                 </div>
                 {/** Sem Selection */}
-                {year === 'SE' && (
+                {year && (
                   <div className="flex px-2 py-1 bg-gray-200 rounded-md flex-col w-full justify-start items-start">
                     <h1 className=" text-sm text-gray-700">
-                      Select SEM<span className=" text-red-500">*</span>
+                      Select Semester<span className=" text-red-500">*</span>
                     </h1>
                     <select
                       className=" bg-transparent outline-none appearance-none border-0  h-8 p-1 w-full"
@@ -117,54 +156,54 @@ const AdminNotes = () => {
                       value={sem}
                       onChange={handleSemChange}
                     >
-                      <option value="">-- Select SEM --</option>
-                      <option value="III">III</option>
-                      <option value="IV">IV</option>
+                      <option value="">--Select Sem--</option>
+                      {getSemesterOptions().map((semesterOption) => (
+                        <option key={semesterOption} value={semesterOption}>
+                          {semesterOption}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 )}
-                {year === 'TE' && (
+                {/** Subject Selection */}
+                {year && sem && (
                   <div className="flex px-2 py-1 bg-gray-200 rounded-md flex-col w-full justify-start items-start">
                     <h1 className=" text-sm text-gray-700">
-                      Select SEM<span className=" text-red-500">*</span>
+                      Select Subject<span className=" text-red-500">*</span>
                     </h1>
                     <select
                       className=" bg-transparent outline-none appearance-none border-0  h-8 p-1 w-full"
-                      id="sem"
-                      name="sem"
-                      value={sem}
-                      onChange={handleSemChange}
+                      id="subject"
+                      name="subject"
+                      value={subject}
+                      onChange={handleSubjectChange}
                     >
-                      <option value="">-- Select SEM --</option>
-                      <option value="V">V</option>
-                      <option value="VI">VI</option>
-                    </select>
-                  </div>
-                )}
-                {year === 'BE' && (
-                  <div className="flex px-2 py-1 bg-gray-200 rounded-md flex-col w-full justify-start items-start">
-                    <h1 className=" text-sm text-gray-700">
-                      Select SEM<span className=" text-red-500">*</span>
-                    </h1>
-                    <select
-                      className=" bg-transparent outline-none appearance-none border-0  h-8 p-1 w-full"
-                      id="sem"
-                      name="sem"
-                      value={sem}
-                      onChange={handleSemChange}
-                    >
-                      <option value="">-- Select SEM --</option>
-                      <option value="VII">VII</option>
-                      <option value="VIII">VIII</option>
+                      <option value="">--Select Subject--</option>
+                      {getSubjectOptions().map((subjectOption) => (
+                        <option key={subjectOption} value={subjectOption}>
+                          {subjectOption}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 )}
               </div>
               <div className="flex mt-4 w-full justify-center items-center">
                 <Button
-                  onClick={() => alert('Submitted')}
-                  disabled={!year || !sem || !file}
-                  className="flex py-5 uppercase text-white tracking-wider justify-center items-center bg-blue-600 w-full"
+                  onClick={() => {
+                    console.log(
+                      'Year:',
+                      year,
+                      ' Sem:',
+                      sem,
+                      ' Subject:',
+                      subject
+                    );
+                  }}
+                  disabled={!year || !sem || !subject || !file}
+                  className={`flex py-5 uppercase text-white tracking-wider justify-center items-center ${
+                    isUploadDisabled ? 'bg-blue-300' : 'bg-blue-600'
+                  } w-full`}
                 >
                   Upload
                 </Button>
