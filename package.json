@@ -30,7 +30,8 @@
     "react-responsive-carousel": "^3.2.23",
     "tailwindcss": "^3.2.7",
     "tailwindcss-brand-colors": "^0.3.3",
-    "tailwindcss-debug-screens": "^2.2.1"
+    "tailwindcss-debug-screens": "^2.2.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.2.3",

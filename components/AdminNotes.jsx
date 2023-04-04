@@ -3,6 +3,7 @@ import { Upload, Button } from 'antd';
 import { FaFileUpload } from 'react-icons/fa';
 import { useState } from 'react';
 import { AiOutlinePlus } from 'react-icons/ai';
+import { v4 } from 'uuid';
 import { storage } from '../lib/firebase.jsx';
 
 const AdminNotes = () => {
@@ -78,6 +79,7 @@ const AdminNotes = () => {
     }
   };
   const [filesup, setFiles] = useState([]);
+  const fileSubmitted = filesup[0]?.name;
 
   const { Dragger } = Upload;
   const props = {
@@ -96,9 +98,10 @@ const AdminNotes = () => {
       const file = filesup[0];
       const storageRef = ref(
         storage,
-        `notes/${year}/${sem}/${subject}/${file.name}`
+        `notes/${year}/${sem}/${subject}/${file.name + v4()}`
       );
       const uploadFile = await uploadBytes(storageRef, file);
+      alert('Notes Submitted');
       console.log(`File uploaded: ${uploadFile.ref}`);
     } catch (e) {
       console.log(e);
