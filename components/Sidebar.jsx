@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
+  MdOutlineDashboard,
   MdOutlineQuiz,
 } from 'react-icons/md';
 import { IoLogoXing } from 'react-icons/io';
@@ -12,6 +13,7 @@ import { BiBook, BiLogOut } from 'react-icons/bi';
 import { AiOutlineSchedule, AiOutlineSetting } from 'react-icons/ai';
 import { CgNotes } from 'react-icons/cg';
 import { HiOutlinePlusCircle } from 'react-icons/hi';
+import { useRouter } from 'next/router';
 import DashBoard from './DashBoard';
 import MobileNavbar from './MobileNavbar';
 
@@ -20,6 +22,7 @@ const Sidebar = ({ children }) => {
   const [isMobile, setIsMobile] = useState(false);
   const [nav, setNav] = useState(false);
   const [showDiv, setShowDiv] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleResize = () => {
@@ -80,11 +83,38 @@ const Sidebar = ({ children }) => {
         </div>
         {/** Actions */}
         <div className=" flex w-full flex-1 flex-col gap-3 justify-center items-center">
+          <Link href="/admin">
+            <div
+              className={`w-full ${
+                open ? 'justify-start px-6' : 'justify-center'
+              } group flex ${
+                router.asPath === '/admin'
+                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
+                  : ''
+              } cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+            >
+              <div>
+                <MdOutlineDashboard
+                  className=" text-blue-600 group-hover:text-white"
+                  size={30}
+                />
+              </div>
+              {showDiv ? (
+                <div>
+                  <h1>Dashboard</h1>
+                </div>
+              ) : null}
+            </div>
+          </Link>
           <Link href="/uploadQuizzes">
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'
-              } group flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+              } group${
+                router.asPath === '/uploadQuizzes'
+                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
+                  : ''
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <MdOutlineQuiz
@@ -103,7 +133,11 @@ const Sidebar = ({ children }) => {
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'
-              } group flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+              } group ${
+                router.asPath === '/uploadTT'
+                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
+                  : ''
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <AiOutlineSchedule
@@ -122,7 +156,11 @@ const Sidebar = ({ children }) => {
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'
-              } group flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+              } group ${
+                router.asPath === '/uploadNotes'
+                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
+                  : ''
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <CgNotes
@@ -141,7 +179,11 @@ const Sidebar = ({ children }) => {
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'
-              } group flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+              } group ${
+                router.asPath === '/uploadQB'
+                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
+                  : ''
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <BiBook
@@ -151,13 +193,13 @@ const Sidebar = ({ children }) => {
               </div>
               {showDiv ? (
                 <div>
-                  <h1>QuestionBanks</h1>
+                  <h1>Question-Banks</h1>
                 </div>
               ) : null}
             </div>
           </Link>
         </div>
-        {/** Logout */}
+        {/** Upload,Setting & Logout  */}
         <div className="w-full flex flex-col justify-between items-center gap-2">
           <Link href="/quizzes">
             <div
@@ -182,7 +224,11 @@ const Sidebar = ({ children }) => {
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'
-              } group flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+              } group ${
+                router.asPath === '/settings'
+                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
+                  : ''
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <AiOutlineSetting
