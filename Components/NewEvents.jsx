@@ -11,7 +11,7 @@ const NewEvents = () => {
           <h1>Latest Events</h1>
         </div>
 
-        <div className='h-[80%] mt-5 md:mx-10 xxsm:mx-5 flex md:flex-row xxsm:flex-col gap-5'>
+        <div className='mt-5 md:mx-10 xxsm:mx-5 flex md:flex-row xxsm:flex-col gap-5'>
           
           {/* Section 1 */}
           <div className='relative p-5 md:w-[45%] bg-gray-800 rounded-lg shadow-xl'>
