@@ -4,17 +4,15 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { Modal } from 'antd';
-import SearchBox from './SearchBox';
 
 const DashBoard = () => {
   const router = useRouter();
   const [modal1Open, setModal1Open] = useState(false);
 
-  const [searchText, setSearchText] = useState('');
   return (
     <>
       {/** DashBoard */}
-      <div className="rounded-lg  border-[1px] p-1 flex justify-between items-center bg-white">
+      <div className="rounded-lg border-[1px] p-1 flex justify-between items-center bg-white">
         {/** Action Page */}
         <div className=" ml-4">
           <h1 className=" text-blue-900 tracking-wider font-extrabold">
@@ -35,7 +33,6 @@ const DashBoard = () => {
         </div>
         {/** Search & User Info */}
         <div className="flex relative gap-2 justify-between items-center">
-          <SearchBox searchText={searchText} setSearchText={setSearchText} />
           <div
             onClick={setModal1Open}
             className=" cursor-pointer border-blue-500 border-2 hidden md:flex justify-center items-center rounded-full  "
@@ -53,7 +50,8 @@ const DashBoard = () => {
             title="Mrunal V"
             style={{
               top: 60,
-              right: 40,
+              right: 16,
+              padding: 0,
               position: 'absolute',
             }}
             open={modal1Open}
