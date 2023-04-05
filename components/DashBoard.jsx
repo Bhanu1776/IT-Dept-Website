@@ -5,14 +5,18 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { Modal } from 'antd';
 
-const DashBoard = () => {
+const DashBoard = ({ isMobile }) => {
   const router = useRouter();
   const [modal1Open, setModal1Open] = useState(false);
 
   return (
     <>
       {/** DashBoard */}
-      <div className="rounded-lg border-[1px] p-1 flex justify-between items-center bg-white">
+      <div
+        className={`rounded-lg ${
+          isMobile ? 'mt-16' : ''
+        } border-[1px] p-1 flex justify-between items-center bg-white`}
+      >
         {/** Action Page */}
         <div className=" ml-4">
           <h1 className=" text-blue-900 tracking-wider font-extrabold">

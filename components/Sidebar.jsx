@@ -12,7 +12,6 @@ import { IoLogoXing } from 'react-icons/io';
 import { BiBook, BiLogOut } from 'react-icons/bi';
 import { AiOutlineSchedule, AiOutlineSetting } from 'react-icons/ai';
 import { CgNotes } from 'react-icons/cg';
-import { HiOutlinePlusCircle } from 'react-icons/hi';
 import { useRouter } from 'next/router';
 import DashBoard from './DashBoard';
 import MobileNavbar from './MobileNavbar';
@@ -240,7 +239,7 @@ const Sidebar = ({ children }) => {
       {/** DashBoard & Pages */}
       <div className="px-2 md:px-4 flex flex-col gap-2 flex-1 w-full h-screen overflow-y-auto">
         {/** DashBoard */}
-        <DashBoard />
+        <DashBoard isMobile={isMobile} />
         {/** Pages are Load here */}
         <main className="rounded-lg flex-1 w-full bg-slate-100    ">
           {children}

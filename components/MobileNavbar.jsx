@@ -15,7 +15,7 @@ const MobileNavbar = ({ nav, setNav }) => {
   const [modal1Open, setModal1Open] = useState(false);
   return (
     <>
-      <div className=" md:hidden flex h-16 px-4 bg-[#214ED3] text-white justify-between items-center">
+      <div className=" md:hidden z-[200] fixed w-full flex h-16 px-4 bg-blue-700/80 text-white justify-between items-center backdrop-blur-md">
         <div
           onClick={setModal1Open}
           className=" relative cursor-pointer rounded-full border-2 border-white flex justify-center items-center object-cover object-center "
