@@ -1,6 +1,6 @@
+/* eslint-disable react/button-has-type */
 import { useRouter } from 'next/router';
 import { MdEmail, MdLock, MdVisibilityOff, MdVisibility } from 'react-icons/md';
-
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -41,15 +41,16 @@ const Login = () => {
             <p className=" text-gray-400">Xavier Institute of Engineering</p>
           </div>
           <div className="">
-            <h2 className=" text-3xl font-extrabold font-pops tracking-wider">Welcome Back!</h2>
+            <h2 className=" text-3xl font-extrabold font-pops tracking-wider">
+              Welcome Back!
+            </h2>
           </div>
           <div>
-            <h3 className='font-pops text-lg'>Student Name</h3>
+            <h3 className="font-pops text-lg">Student Name</h3>
           </div>
         </div>
 
-        
-        <div className='flex flex-col gap-5'>
+        <div className="flex flex-col gap-5">
           <div className=" w-full p-1 flex bg-transparent">
             {/** Email */}
             <div className=" text-[#000000] mr-2 mt-3">
@@ -80,14 +81,18 @@ const Login = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   value={password}
                   name="password"
-                  placeholder="Enter Password"/>
-                  <div className=" cursor-pointer flex absolute bottom-[30%] left-[87%]" onClick={togglePassword}>
-              {passwordType === 'password' ? (
-                <MdVisibilityOff size={20} className=" text-gray-400" />
-              ) : (
-                <MdVisibility size={20} className=" text-black" />
-              )}
-            </div>
+                  placeholder="Enter Password"
+                />
+                <div
+                  className=" cursor-pointer flex absolute bottom-[30%] left-[87%]"
+                  onClick={togglePassword}
+                >
+                  {passwordType === 'password' ? (
+                    <MdVisibilityOff size={20} className=" text-gray-400" />
+                  ) : (
+                    <MdVisibility size={20} className=" text-black" />
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -100,6 +105,11 @@ const Login = () => {
           >
             Login
           </button>
+        </div>
+
+        <div className='flex'>
+          <h1 className='text-gray-500'>Don't have an account?</h1>
+          <Link href="/signup">SignUp</Link>
         </div>
 
         <div className=" flex items-center text-sm mb-3">
