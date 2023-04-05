@@ -89,13 +89,13 @@ const Sidebar = ({ children }) => {
                 open ? 'justify-start px-6' : 'justify-center'
               } group flex ${
                 router.asPath === '/admin'
-                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
-                  : ''
-              } cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+                  ? ' border-r-[5px] translate-x-2 text-blue-600 border-blue-800 rounded-l-md rounded-none'
+                  : 'text-gray-500 '
+              } cursor-pointer rounded-md p-1 gap-2 uppercase items-center   hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <MdOutlineDashboard
-                  className=" text-blue-600 group-hover:text-white"
+                  className="  group-hover:text-white"
                   size={30}
                 />
               </div>
@@ -112,19 +112,16 @@ const Sidebar = ({ children }) => {
                 open ? 'justify-start px-6' : 'justify-center'
               } group${
                 router.asPath === '/uploadQuizzes'
-                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
-                  : ''
-              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+                  ? ' border-r-[5px] translate-x-2 text-blue-600 border-blue-800 rounded-l-md rounded-none'
+                  : ' text-gray-500'
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
-                <MdOutlineQuiz
-                  className=" text-blue-600 group-hover:text-white"
-                  size={30}
-                />
+                <MdOutlineQuiz className="  group-hover:text-white" size={30} />
               </div>
               {showDiv ? (
                 <div>
-                  <h1>Quizzes</h1>
+                  <h1 className=" tracking-wide">Quizzes</h1>
                 </div>
               ) : null}
             </div>
@@ -135,19 +132,19 @@ const Sidebar = ({ children }) => {
                 open ? 'justify-start px-6' : 'justify-center'
               } group ${
                 router.asPath === '/uploadTT'
-                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
-                  : ''
-              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+                  ? ' border-r-[5px] translate-x-2 text-blue-600 border-blue-800 rounded-l-md rounded-none'
+                  : 'text-gray-500'
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center   hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <AiOutlineSchedule
-                  className=" text-blue-600 group-hover:text-white"
+                  className="  group-hover:text-white"
                   size={30}
                 />
               </div>
               {showDiv ? (
                 <div>
-                  <h1>Time-table</h1>
+                  <h1 className=" tracking-wide">Time-table</h1>
                 </div>
               ) : null}
             </div>
@@ -158,19 +155,16 @@ const Sidebar = ({ children }) => {
                 open ? 'justify-start px-6' : 'justify-center'
               } group ${
                 router.asPath === '/uploadNotes'
-                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
-                  : ''
-              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+                  ? ' border-r-[5px] translate-x-2 text-blue-600 border-blue-800 rounded-l-md rounded-none'
+                  : 'text-gray-500'
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center   hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
-                <CgNotes
-                  className=" text-blue-600 group-hover:text-white"
-                  size={30}
-                />
+                <CgNotes className="  group-hover:text-white" size={30} />
               </div>
               {showDiv ? (
                 <div>
-                  <h1>Notes</h1>
+                  <h1 className=" tracking-wide">Notes</h1>
                 </div>
               ) : null}
             </div>
@@ -181,19 +175,16 @@ const Sidebar = ({ children }) => {
                 open ? 'justify-start px-6' : 'justify-center'
               } group ${
                 router.asPath === '/uploadQB'
-                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
-                  : ''
-              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center  hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+                  ? ' border-r-[5px] translate-x-2 text-blue-600 border-blue-800 rounded-l-md rounded-none'
+                  : 'text-gray-500'
+              } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center   hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
-                <BiBook
-                  className=" text-blue-600 group-hover:text-white"
-                  size={30}
-                />
+                <BiBook className="  group-hover:text-white" size={30} />
               </div>
               {showDiv ? (
                 <div>
-                  <h1>Question-Banks</h1>
+                  <h1 className=" tracking-wide">Q-Banks</h1>
                 </div>
               ) : null}
             </div>
@@ -201,63 +192,41 @@ const Sidebar = ({ children }) => {
         </div>
         {/** Upload,Setting & Logout  */}
         <div className="w-full flex flex-col justify-between items-center gap-2">
-          <Link href="/quizzes">
-            <div
-              className={`w-full ${
-                open ? 'justify-start px-6' : 'justify-center'
-              } group flex cursor-pointer rounded-md p-1 gap-2 text-white uppercase items-center bg-blue-600 hover:bg-blue-800 hover:text-white transition-all ease-in-out duration-150`}
-            >
-              <div>
-                <HiOutlinePlusCircle
-                  className=" text-white group-hover:text-white"
-                  size={30}
-                />
-              </div>
-              {showDiv ? (
-                <div>
-                  <h1>Upload</h1>
-                </div>
-              ) : null}
-            </div>
-          </Link>
           <Link href="/settings">
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'
               } group ${
                 router.asPath === '/settings'
-                  ? ' border-r-[5px] translate-x-2 border-blue-800 rounded-l-md rounded-none'
-                  : ''
+                  ? ' border-r-[5px] translate-x-2 text-blue-600 border-blue-800 rounded-l-md rounded-none'
+                  : 'text-gray-500'
               } flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
                 <AiOutlineSetting
-                  className=" text-blue-600 group-hover:text-white group-hover:rotate-90 duration-200"
+                  className=" group-hover:text-white group-hover:rotate-90 duration-200"
                   size={30}
                 />
               </div>
               {showDiv ? (
                 <div>
-                  <h1>Settings</h1>
+                  <h1 className=" tracking-wide">Settings</h1>
                 </div>
               ) : null}
             </div>
           </Link>
-          <Link href="/quizzes">
+          <Link href="/">
             <div
               className={`w-full ${
                 open ? 'justify-start px-6' : 'justify-center'
-              } group flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
+              } group flex cursor-pointer rounded-md p-1 gap-2 uppercase items-center text-gray-500 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-150`}
             >
               <div>
-                <BiLogOut
-                  className=" text-blue-600 group-hover:text-white"
-                  size={30}
-                />
+                <BiLogOut className=" group-hover:text-white" size={30} />
               </div>
               {showDiv ? (
                 <div>
-                  <h1>Logout</h1>
+                  <h1 className=" tracking-wide">Logout</h1>
                 </div>
               ) : null}
             </div>
