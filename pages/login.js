@@ -4,15 +4,15 @@
 import { useRouter } from 'next/router';
 import { MdEmail, MdLock, MdVisibilityOff, MdVisibility } from 'react-icons/md';
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { addDoc, collection } from 'firebase/firestore';
 import { useState } from 'react';
 import Link from 'next/link';
-import { auth } from '../lib/firebase';
+import { auth, firestore } from '../lib/firebase';
 
 const Login = () => {
   const router = useRouter();
-
   const [email, setEmail] = useState('');
-
+  const [role, setRole] = useState('');
   const [password, setPassword] = useState('');
   const [passwordType, setPasswordType] = useState('email');
 
@@ -24,13 +24,28 @@ const Login = () => {
     setPasswordType('password');
   };
 
+  const dbRef = collection(firestore, 'users');
+
   const handleLogin = async () => {
+    if (email.includes('@xavier.ac.in')) {
+      setRole('faculty');
+    }
+    if (email.includes('@student.xavier.ac.in')) {
+      setRole('student');
+    } else {
+      setRole('guest');
+    }
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      await addDoc(dbRef, {
+        email: `${email}`,
+        role: `${role}`,
+      });
       alert('Logged In successfully');
-      router.push('/admin');
+      router.push('/homepage');
     } catch (err) {
       alert(err);
+      console.log(err);
     }
   };
 
