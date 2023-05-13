@@ -1,4 +1,4 @@
-import Words from '../../components/admin/Words';
+import Words from '../../../components/admin/Words';
 
 const uploadNotes = () => (
   <div className="p-2">

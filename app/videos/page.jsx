@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from 'react';
-import Navbar from '../components/navigation/Navbar';
+import Navbar from '../../components/navigation/Navbar';
 
 const API_KEY = process.env.NEXT_PUBLIC_YT_API;
 

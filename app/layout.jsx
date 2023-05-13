@@ -4,10 +4,13 @@ import { Helmet } from 'react-helmet';
 import { useRouter } from 'next/router';
 import Sidebar from '../components/admin/Sidebar';
 
-function MyApp({ Component, pageProps }) {
+export default function RootLayout({ children, Component, pageProps }) {
   const router = useRouter();
   return (
     <>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
       <Helmet>
         <body
           className={classNames({
@@ -30,5 +33,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
-export default MyApp;

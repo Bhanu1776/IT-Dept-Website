@@ -1,3 +1,5 @@
+'use client';
+
 import Navbar from '../components/navigation/Navbar';
 import Carousel from '../components/landing/HeroCarousel';
 import Footer from '../components/navigation/Footer';

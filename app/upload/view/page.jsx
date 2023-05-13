@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
 import { useEffect, useState } from 'react';
-import { storage } from '../../lib/firebase';
+import { storage } from '../../../lib/firebase';
 
 const view = () => {
   const [files, setFiles] = useState([]);
