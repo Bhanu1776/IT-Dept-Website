@@ -1,14 +1,29 @@
 {
-  "name": "it-dept",
+  "name": "it-dept-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "commit": "cz"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "antd": "^5.6.4",
+    "classnames": "^2.3.2",
+    "firebase": "^10.0.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.10.1",
+    "react-responsive-carousel": "^3.2.23",
+    "tailwindcss-brand-colors": "^0.3.3",
+    "tailwindcss-debug-screens": "^2.2.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
@@ -16,6 +31,28 @@
     "postcss": "8.4.25",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "3.3.2",
+    "@vercel/analytics": "^1.0.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.9",
+    "@types/react": "^18.2.14",
+    "cz-git": "^1.6.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",   
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "czConfig": ".cz-config.js"
+    }
   }
 }
+

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap"); /**For Headings*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); /** Sans Modern */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700&display=swap"); /** Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /**Poppins*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fafcff;
+}
+html {
+  scroll-behavior: smooth;
+  /* scrollbar-color: #14B8A6;
+  scrollbar-width: thin;
+  scrollbar-color: #14B8A6 transparent; */
+}
+
+/* Custom Scrollbar
+/* html::-webkit-scrollbar {
+  width: 1.5rem;
+} */
+/* html::-webkit-scrollbar-track {
+   background-color: transparent;
+} */
+
+/* html::-webkit-scrollbar-thumb {
+  background: #14B8A6;
+    border: 5px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+} */
+p {
+  color: rgb(24 24 29);
+  opacity: 0.7;
+  line-height: 1.5;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
