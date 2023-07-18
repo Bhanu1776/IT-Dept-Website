@@ -1,4 +1,4 @@
-import PdfViewer from './other/PdfViewer';
+import PdfViewer from '@components/other/PdfViewer';
 
 const pdfViewer = () => <PdfViewer />;
 

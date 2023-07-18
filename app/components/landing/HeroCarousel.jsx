@@ -11,7 +11,6 @@ const HeroCarousel = () => (
       showStatus={false}
       showThumbs={false}
       useKeyboardArrows
-      swipeable
     >
       <div>
         <Image

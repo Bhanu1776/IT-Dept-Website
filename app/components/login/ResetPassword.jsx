@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { confirmPasswordReset } from 'firebase/auth';
-import { auth } from '../../lib/firebase';
+import { auth } from '@lib/firebase';
 
 
 const ResetPassword = () => {
@@ -37,24 +37,24 @@ const ResetPassword = () => {
     }
   };
   return (
-    <div className=" flex h-screen w-full flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center w-full h-screen ">
       <div className=" w-[420px] gap-2 flex flex-col justify-between items-center p-5 bg-white rounded-lg border-[1px] border-gray-200 shadow-md shadow-gray-200">
         {/* Login layout */}
-        <div className=" w-full mb-4 flex flex-col justify-center items-center">
-          <div className=" uppercase">
-            <h2 className=" text-xl font-bold tracking-wide">New Password</h2>
+        <div className="flex flex-col items-center justify-center w-full mb-4 ">
+          <div className="uppercase ">
+            <h2 className="text-xl font-bold tracking-wide ">New Password</h2>
           </div>
         </div>
 
-        <div className=" w-full p-1 border-2 border-gray-100 rounded-md flex items-center justify-start bg-transparent">
+        <div className="flex items-center justify-start w-full p-1 bg-transparent border-2 border-gray-100 rounded-md ">
           {/** Email */}
-          <div className=" flex justify-start w-full">
+          <div className="flex justify-start w-full ">
             <div className=" text-[#214ED3] m-2">
               <MdLock size={20} />
             </div>
             <div className="w-full">
               <input
-                className=" p-2 w-full outline-none "
+                className="w-full p-2 outline-none "
                 type={passwordType}
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
@@ -63,16 +63,16 @@ const ResetPassword = () => {
               />
             </div>
           </div>
-          <div className=" cursor-pointer flex " onClick={togglePassword}>
+          <div className="flex cursor-pointer " onClick={togglePassword}>
             {passwordType === 'password' ? (
-              <MdVisibilityOff size={20} className=" text-gray-400" />
+              <MdVisibilityOff size={20} className="text-gray-400 " />
             ) : (
-              <MdVisibility size={20} className=" text-black" />
+              <MdVisibility size={20} className="text-black " />
             )}
           </div>
         </div>
 
-        <div className=" w-full">
+        <div className="w-full ">
           <button
             onClick={handlePasswordReset}
             className=" bg-[#214ED3] uppercase tracking-wider text-white hover:opacity-[0.8] active:opacity-[0.5] p-4 rounded-md w-full transition-all ease-in duration-150"
@@ -81,9 +81,9 @@ const ResetPassword = () => {
           </button>
         </div>
 
-        <div className=" flex items-center text-sm">
+        <div className="flex items-center text-sm ">
           <Link href="/login">
-            <p className=" text-blue-400 cursor-pointer">Back to Log in</p>
+            <p className="text-blue-400 cursor-pointer ">Back to Log in</p>
           </Link>
         </div>
       </div>
